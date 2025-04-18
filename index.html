@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">DOM Manipulation Exercise</h1>
+    </header>
+    
+    <main class="container">
+        <p id="content">This is some initial content that will change.</p>
+        <button id="change-text-btn">Change Text</button>
+        <button id="change-style-btn">Change Style</button>
+        <button id="toggle-element-btn">Toggle Element</button>
+        <div id="element-to-toggle" class="highlight">
+            This element can be toggled
+        </div>
+        <ul id="item-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
